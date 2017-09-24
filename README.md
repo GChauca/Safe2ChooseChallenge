@@ -8,10 +8,10 @@ Deadline: Monday 25 at noon.
 
 # Step 2: 3rd party Javascript integration
 * Hindi and polish greetings added.
-* Now the code has specific code per language, use the Javascript API documentation https://api.zopim.com/files/meshim/widget/controllers/liveChatAPI/Departments-js.html to set a department per language, the name of the department will be the language detected (english, spanish, french, etc)
-* Using the same documentation set "Our counselors are not available at the moment, please leave a message and we will contact you soon." as the greeting message for the offline form in all languages, use Google Translator to customize the message per language.
-* Refactor the code to remove code duplication and make the file shorter. 
-* Commit your changes.
+* I read the documentation, but I can't run the code to finally see if the answer is the better one.
+* Greeting message for the offline form added.
+* Refactored code. 
+* Changes commited.
 
 # Step 3: Wordpress customization
 * Review the file `functions.php` into "Step3" folder and add comments to the function #gform_display_weeks explaining what it does.
