@@ -1,21 +1,10 @@
-# Welcome!
-I'm very excited to see you've come until here, this challenge is a shorter version of what should be, but, as you must know I've been late with other commitments and the eartquake this week didn't help much on this. So, this challenge has been created to use less time. The deadline it's this friday 22 at midnight. Please, if you have any issue, reason, commitment (as volunteer for Cruz Roja, etc) please let me know and we can find a way to give you more time. Personally, I think 5-8 hours are enough time to resolve this but the internet connectity is not stable in many places, that's why I'm giving 2 days to complete it.
+# Safe2Choose Challenge
+Deadline: Monday 25 at noon.
 
-If you have any question, any comment, whatever, please let me know.
-
-Stay safe
-
-# Prepare environment
-* Create a PGP key.
-* Use PGP to send an encrypted message to cecilia@safe2choose.org with your public PGP key attached. The public key you need for cecilia@safe2choose.org can be found here https://mega.nz/#!LNoVCDrK!FWnL-nPmo4XDuFpfFERPWerAYcxVcZUtFf2YaXw12fg
-* Create a Github account. For privacy and security reasons, create a new Github account just for these exercises
-* Clone this repository https://github.com/cecilia-s2c/WebDevTechChallenge and copy the contents into the new project you just created.
 
 # Step 1: Code review
-* Review the code into the "Step1" folder for security vulnerabilities. This Meteor project is meant to keep track of the number of times each user clicks on the button on the client. The count per user is recorded in two places: On the Meteor server that the app is connected to. On a server located at secure.safe2choose.org (this server does not actually exist).
-* Only the counts of users who have signed in with Twitter need to be securely stored. The count of users who are not logged in is irrelevant.
-* Although this code will compile, it should be treated as pseudo-code. Do not worry about inefficient or ugly code. You are only looking for vulnerabilities that would allow users to abuse the system or issues that would give hackers with access to the code the ability to compromise different parts of the system (assuming those components actually existed).
-* Deliverable: Add comments to this README with explanations of the vulnerabilities you are able to find. For extra points, correct the source code to fix those issues. When finished, commit your changes.
+* Actually this code doesn't compile. I attach the screenshot for evidence 
+  ![Screenshot](./status.png)
 
 # Step 2: 3rd party Javascript integration
 * The file `chat.js` into the Step 2 folder initializes our chat service, Zopim, in the available languages. 
