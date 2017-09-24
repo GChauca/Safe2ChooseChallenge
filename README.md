@@ -4,7 +4,7 @@ Deadline: Monday 25 at noon.
 
 # Step 1: Code review
 * Actually this code doesn't compile. I attach the screenshot for evidence 
-  ![Screenshot](./status.png)
+  ![Screenshot](./Step1/status.png)
 
 # Step 2: 3rd party Javascript integration
 * The file `chat.js` into the Step 2 folder initializes our chat service, Zopim, in the available languages. 
