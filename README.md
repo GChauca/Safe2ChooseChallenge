@@ -7,8 +7,7 @@ Deadline: Monday 25 at noon.
   ![Screenshot](Step1/status.PNG)
 
 # Step 2: 3rd party Javascript integration
-* The file `chat.js` into the Step 2 folder initializes our chat service, Zopim, in the available languages. 
-* Our website has support for 6 languages, and this code has only specific greetings for 3 languages plus english. Change the code to add support for those missing languages. Use Google Translator for translated text. 
+* Hindi and polish greetings added.
 * Now the code has specific code per language, use the Javascript API documentation https://api.zopim.com/files/meshim/widget/controllers/liveChatAPI/Departments-js.html to set a department per language, the name of the department will be the language detected (english, spanish, french, etc)
 * Using the same documentation set "Our counselors are not available at the moment, please leave a message and we will contact you soon." as the greeting message for the offline form in all languages, use Google Translator to customize the message per language.
 * Refactor the code to remove code duplication and make the file shorter. 

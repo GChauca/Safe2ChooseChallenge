@@ -1,6 +1,36 @@
 <script type="text/javascript">
+ 
+  $zopim(function() {
+    $zopim.livechat.departments.filter('es', 'pt', 'fr', 'hi', 'pl', 'en');
+  });
+ 
+  $zopim(function() {
+    $zopim.livechat.departments.setVisitorDepartment('es');
+  });
+
+  $zopim(function() {
+    $zopim.livechat.departments.setVisitorDepartment('pt');
+  });
+
+  $zopim(function() {
+    $zopim.livechat.departments.setVisitorDepartment('hi');
+  });
+
+  $zopim(function() {
+    $zopim.livechat.departments.setVisitorDepartment('pl');
+  });
+
+  $zopim(function() {
+    $zopim.livechat.departments.setVisitorDepartment('en');
+  });
+ 
+ 
+ 
+ 
+ 
+ 
   var url = window.location.href;
-  var locale = url.split("/")[3];
+  var locale = url.split("/")[5];
   var onlineGreeting, offlineGreeting;
 
   if(locale === "es") {
@@ -21,7 +51,7 @@
     });
 
   } 
-  else if(locale === "pt-pt") {
+  else if(locale === "pt") {
     window.$zopim||(function(d,s){var z=$zopim=function(c){
     z._.push(c)},$=z.s=
     d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
