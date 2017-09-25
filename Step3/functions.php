@@ -337,7 +337,7 @@ EOT;
 
 
 /************* ACTIVE SIDEBARS ********************/
-
+// safe2choose-test
 // Sidebars & Widgetizes Areas
 function bones_register_sidebars() {
   register_sidebar(array(
@@ -384,6 +384,16 @@ function bones_register_sidebars() {
     'id' => 'sidebar-social',
     'name' => __( 'Social Sidebar', 'bonestheme' ),
     'description' => __( 'The social sidebar.', 'bonestheme' ),
+    'before_widget' => '<div id="%1$s" class="module module--primary cf %2$s">',
+    'after_widget' => '</div>',
+    'before_title' => '<h2 class="h3 module__title">',
+    'after_title' => '</h2>',
+  ));
+ 
+ register_sidebar(array(
+    'id' => 'sidebar-ad',
+    'name' => __( 'AD Sidebar', 'bonestheme' ),
+    'description' => __( 'Advertising sidebar.', 'bonestheme', 'safe2choose-test' ),
     'before_widget' => '<div id="%1$s" class="module module--primary cf %2$s">',
     'after_widget' => '</div>',
     'before_title' => '<h2 class="h3 module__title">',

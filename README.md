@@ -14,7 +14,6 @@ Deadline: Monday 25 at noon.
 * Changes commited.
 
 # Step 3: Wordpress customization
-* Review the file `functions.php` into "Step3" folder and add comments to the function #gform_display_weeks explaining what it does.
 * Register a new sidebar that will be used for advertising, the container is a div with the class "module--primary" and the title is an h3 with the class "module__title", name and description must be translatable and have "safe2choose-test" as the value for the domain parameter.
 * The file "testimonials.php" is an older version of the template used for https://safe2choose.org/testimonials-on-abortion/, make the changes necessary to:
 * Show the extract of every testimonial instead of the whole content
