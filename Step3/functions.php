@@ -1,4 +1,3 @@
-//Setting comments
 <?php
 
 add_filter('gform_register_init_scripts', 'gform_display_weeks', 10, 2);
@@ -7,11 +6,11 @@ function gform_display_weeks($form) {
 $script = <<<EOT 
 
   (function($){
-
+//The vals var set all the points to storage information about the selected options
 var vals = {
-  en: {
-    fields: {
-      insertTenWeekReminderAfter: "#gform_page_4_6 .gform_page_fields",
+  en: { //English settings
+    fields: { //Groups of information linked to the each part of the form displayed
+      insertTenWeekReminderAfter: "#gform_page_4_6 .gform_page_fields", 
       lmpWeeksLabel: "#field_4_59 > .gfield_label",
       dateSelect: "#input_4_19",
       weeksRadio: "#field_4_59",
@@ -27,7 +26,7 @@ var vals = {
       nineWeekAccept: "#input_4_55",
       nineWeekAcceptYes: "#choice_4_55_1"
     },
-    text: {
+    text: { //Displays and informative text that will filled with the information previously attached
       weeks: "weeks(s)",
       days: "day(s)",
       and: "and",
@@ -36,7 +35,7 @@ var vals = {
       tenWeekReminder: "Remember! Using abortion pills at home is safer within the first 10 weeks of pregnancy."
     }
   },
-  es: {
+  es: { //Spanish
     fields: {
       insertTenWeekReminderAfter: "#gform_page_10_6 .gform_page_fields",
       lmpWeeksLabel: "#field_10_59 > .gfield_label",
@@ -63,7 +62,7 @@ var vals = {
       tenWeekReminder: "¡Recuerda! Usar pastillas abortivas en casa es más seguro durante las 10 primeras semanas de embarazo."
     }
   },
-  pl: {
+  pl: { //Polish
     fields: {
       insertTenWeekReminderAfter: "#gform_page_13_6 .gform_page_fields",
       lmpWeeksLabel: "#field_13_60 > .gfield_label",
@@ -90,7 +89,7 @@ var vals = {
       tenWeekReminder: "Pamiętaj! Używanie pigułki aborcyjnej w domu jest bezpieczniejsze w ciągu pierwszych 10 tygodniach ciąży."
     }
   },
-   fr: {
+   fr: { //French
     fields: {
       insertTenWeekReminderAfter: "#gform_page_22_6 .gform_page_fields",
       lmpWeeksLabel: "#field_22_59 > .gfield_label",
@@ -117,7 +116,7 @@ var vals = {
       tenWeekReminder: "N'oubliez pas ! L’avortement à domicile à l’aide de la pilule abortive est sans risque pendant les 10 premières semaines de grossesse."
     }
   },
-  pt: {
+  pt: { //Portuguese
     fields: {
       insertTenWeekReminderAfter: "#gform_page_23_6 .gform_page_fields",
       lmpWeeksLabel: "#field_23_59 > .gfield_label",
@@ -144,7 +143,7 @@ var vals = {
       tenWeekReminder: "Aviso! O uso das pílulas abortivas em casa é um procedimento seguro dentro das primeiras 10 semanas de gravidez."
     }
   },
-  hi: {
+  hi: { //Hindi
     fields: {
       insertTenWeekReminderAfter: "#gform_page_24_6 .gform_page_fields",
       lmpWeeksLabel: "#field_24_59 > .gfield_label",
@@ -173,7 +172,7 @@ var vals = {
   }
 };
 
-var getTotalDaysFrom = function(then) {
+var getTotalDaysFrom = function(then) { //This calculates the time to know the state of the woman who is accesing the pills
   var now = new Date();
 
   var diff = Math.floor(now.getTime() - then.getTime());
