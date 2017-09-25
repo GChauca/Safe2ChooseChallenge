@@ -18,7 +18,7 @@ Template Name: Testimonials Page
 
 					<header class="article-header module__inner__header">
 
-						<h1 class="page-title" itemprop="headline"><?php the_title(); ?></h1>
+						<h1 class="page-title" itemprop="headline" ><?php the_title(); ?></h1>
 
 					</header> <?php // end article header ?>
 
@@ -63,7 +63,7 @@ Template Name: Testimonials Page
 
 							$testimonials_args = array (
 								'post_type' => 'testimonials',
-								'posts_per_page' => -1,
+								'posts_per_page' => 6,
 								'orderby' => 'date',
 								'order' => 'DESC'
 							);
@@ -152,6 +152,7 @@ Template Name: Testimonials Page
 						</section>
 						<footer class="article-footer">
 							<p><?php _e( 'This is the error message in the template-testimonials-page.php template.', 'bonestheme' ); ?></p>
+							<p><?php _e( 'Only 6 testimoniales per page. Please go to next to keep reading.', 'bonestheme' ); ?></p>
 						</footer>
 					</article>
 
