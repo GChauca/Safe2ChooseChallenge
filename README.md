@@ -23,12 +23,8 @@ Deadline: Monday 25 at noon.
 * Commit your changes.
 
 # Step 4: SASS edition
-* Go to "Step4" folder and use SASS to make the following changes
-* Add values for the five Sass variables at the top of style.scss, values like #000, #F00, etc.
-* In the @for loop, use darken($bg_box_start, $i * 5) for the background-color style rule and lighten($color_box_start, $i * 25) for the color rule.
-* Remember to add into index.html the reference to the stylesheet file
-* Commit your changes
-* Note: Because the exercise file is unfinished, the compilation will fail until you fill in the missing code.
+* Final result
+  ![Image](Step4/Screen.PNG)
 
 # Step 5: Submission
 * Push all changes to Github

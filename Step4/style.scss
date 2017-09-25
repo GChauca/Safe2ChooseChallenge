@@ -1,8 +1,8 @@
-$bg_body: ;
-$bg_main: ;
-$bg_box_start: ;
-$color_box_start: ;
-$border_color: ;
+$bg_body: #2b2b2b;
+$bg_main: #f7b617;
+$bg_box_start: #bbbbbb;
+$color_box_start: #ffffff;
+$border_color: #0000cc;
 $number_of_items: 4;
 
 * {
@@ -33,10 +33,10 @@ h1 {
 	padding: 1%;
 }
 
-@for $i from 1 through $number-of-items {
+@for $i from 4 through $number-of-items {
 	#main div:nth-of-type(#{$i}) {
-		background-color: ;
-		color: ;
+		background-color: $bg_box_start;
+		color: $color_box_start;
 	}
 }
 
