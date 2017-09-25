@@ -1,9 +1,10 @@
+//Setting comments
 <?php
 
 add_filter('gform_register_init_scripts', 'gform_display_weeks', 10, 2);
 function gform_display_weeks($form) {
 
-$script = <<<EOT
+$script = <<<EOT 
 
   (function($){
 
