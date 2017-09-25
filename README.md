@@ -14,11 +14,8 @@ Deadline: Monday 25 at noon.
 * Changes commited.
 
 # Step 3: Wordpress customization
-* The file "testimonials.php" is an older version of the template used for https://safe2choose.org/testimonials-on-abortion/, make the changes necessary to:
-* Show the extract of every testimonial instead of the whole content
-* Use the title as a hyperlink to see the full testimonial
-* Implement a simple pagination at the end of the testimonials list and show only 6 testimonials per page
-* Commit your changes.
+* Functions file commented.
+* Testimonials file modification.
 
 # Step 4: SASS edition
 * Final result
